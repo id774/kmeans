@@ -1,0 +1,19 @@
+kmeans
+
+Name
+ k-means clustering
+
+Syntax
+ require 'kmeans'
+
+Description
+ http://en.wikipedia.org/wiki/K-means_clustering
+
+
+============
+Installation
+============
+
+$ gem install kmeans
+
+

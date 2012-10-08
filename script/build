@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+########################################################################
+# Integration Build Script
+#
+#  Maintainer: id774 <idnanashi@gmail.com>
+#
+#  v1.0 3/16,2012
+#       First.
+########################################################################
+
+kickstart() {
+    export RACK_ROOT="."
+    export RACK_ENV="test"
+}
+
+run_tests() {
+    rake spec
+}
+
+main() {
+    kickstart
+    run_tests
+}
+
+set -ex
+main

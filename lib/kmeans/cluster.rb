@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-require 'pair'
-require 'pearson'
-
 module Kmeans
   class Cluster
     def initialize(word_counts, user_options = {})

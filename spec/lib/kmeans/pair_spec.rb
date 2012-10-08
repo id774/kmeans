@@ -22,7 +22,9 @@ describe Kmeans::Pair do
         result[0].should == expect[0]
         result[1].should == expect[1]
       end
+    end
 
+    describe '最小値と最大値と余分な値を渡す場合' do
       it "ペアが返却される" do
         min = 2
         max = 4
@@ -32,7 +34,9 @@ describe Kmeans::Pair do
         result[0].should == expect[0]
         result[1].should == expect[1]
       end
+    end
 
+    describe '同一の値を渡す場合' do
       it "ペアが返却される" do
         min = 5
         max = 5

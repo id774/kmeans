@@ -15,11 +15,9 @@ See also.
 Tutorial
 --------
 
-`
     require 'kmeans/pair'
     require 'kmeans/pearson'
     require 'kmeans/cluster'
-
     data = {
     "test01"=>
       {"hoge"=>0,
@@ -52,7 +50,6 @@ Tutorial
        "piyo"=>1
       },
     } # 2-dimensional hash
-
     cluster = Kmeans::Cluster.new(data, {
       :centroids => 4,
       :loop_max => 10
@@ -60,7 +57,6 @@ Tutorial
     cluster.make_cluster
     puts cluster.cluster # => {3=>["test01", "test04"], 1=>["test02"], 2=>["test03", "test05"], 0=>["test06"]}
     # Result changes for each execution
-`
 
 
 Environment

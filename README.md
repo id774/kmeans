@@ -4,8 +4,8 @@ Kmeans Cluster
 **K-means clustering**
 
 
-What is Kmeans?
----------------
+What is K-means?
+----------------
 
 See also.
 
@@ -15,23 +15,13 @@ See also.
 Tutorial
 --------
 
-See examples.
-
-
-Development
------------
-
-We need your help.
-
-**Repository**
-
-+ https://github.com/id774/kmeans
+See spec files.
 
 
 ChangeLog
 ---------
 
-See doc/ChangeLog file.
+See doc/ChangeLog.
 
 
 Developers

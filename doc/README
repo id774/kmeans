@@ -9,11 +9,8 @@ Syntax
 Description
  http://en.wikipedia.org/wiki/K-means_clustering
 
-
-============
 Installation
-============
+ $ gem install kmeans
 
-$ gem install kmeans
-
-
+Tutorial
+ See spec files.

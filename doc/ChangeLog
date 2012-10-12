@@ -1,3 +1,11 @@
+=== 0.0.4 / 2012-10-12
+
+* Fix hcluster important bug.
+  * It should be "Reciprocal number" of pearson, but pearson.
+
+* Add dendrogram.
+
+
 === 0.0.3 / 2012-10-11
 
 * Add hcluster.

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "kmeans"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["id774"]
-  s.date = "2012-10-11"
+  s.date = "2012-10-12"
   s.description = "K-means clustering"
   s.email = "idnanashi@gmail.com"
   s.extra_rdoc_files = [
@@ -26,16 +26,17 @@ Gem::Specification.new do |s|
     "doc/ChangeLog",
     "doc/LICENSE",
     "doc/README",
-    "examples/hcluster.rb",
-    "examples/kmeans.rb",
     "kmeans.gemspec",
     "lib/kmeans.rb",
     "lib/kmeans/cluster.rb",
+    "lib/kmeans/dendrogram.rb",
     "lib/kmeans/hcluster.rb",
     "lib/kmeans/pair.rb",
     "lib/kmeans/pearson.rb",
     "script/build",
+    "spec/fixtures/blogdata.txt",
     "spec/lib/kmeans/cluster_spec.rb",
+    "spec/lib/kmeans/dendrogram_spec.rb",
     "spec/lib/kmeans/hcluster_spec.rb",
     "spec/lib/kmeans/pair_spec.rb",
     "spec/lib/kmeans/pearson_spec.rb",
@@ -53,15 +54,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rmagick>, [">= 0"])
       s.add_development_dependency(%q<cucumber>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
+      s.add_dependency(%q<rmagick>, [">= 0"])
       s.add_dependency(%q<cucumber>, [">= 0"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
+    s.add_dependency(%q<rmagick>, [">= 0"])
     s.add_dependency(%q<cucumber>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])

@@ -49,11 +49,11 @@ module Kmeans
 
       while clust.length > 1
         lowestpair = [0,1]
-        closest = Pearson.calc(clust[0].vec, clust[1].vec)
+        closest = 1 - Pearson.calc(clust[0].vec, clust[1].vec)
         for i in 0...clust.length
           for j in i+1...clust.length
             if !distances.key?([clust[i].id, clust[j].id])
-              distances[[clust[i].id, clust[j].id]] = Pearson.calc(clust[i].vec, clust[j].vec)
+              distances[[clust[i].id, clust[j].id]] = 1 - Pearson.calc(clust[i].vec, clust[j].vec)
             end
             d = distances[[clust[i].id, clust[j].id]]
             if d < closest

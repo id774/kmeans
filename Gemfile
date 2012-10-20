@@ -1,8 +1,8 @@
-# Version:20121012
+# Version:20121020
 
 source :rubygems
 
-gem 'rmagick'
+# gem 'rmagick'
 
 group :test do
   gem 'rspec'

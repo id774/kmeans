@@ -81,14 +81,14 @@ module Kmeans
         }
         1 - Pearson.calc(web_counts, centroid_counts)
       }
-      correlations.rindex(correlations.min { |x, y| x.abs <=> y.abs })
+      correlations.rindex(correlations.min {|x, y| x.abs <=> y.abs })
     end
 
     def average_attached(centroid)
       average_word_counts = @cluster[centroid].map {|url|
         @centroids[centroid].keys.map {|word| @word_counts[url][word]}
       }.transpose.map {|all_counts|
-        all_counts.inject(0) { |sum, count| sum + count }.quo(all_counts.size)
+        all_counts.inject(0) {|sum, count|sum + count}.quo(all_counts.size)
       }
       Hash[*@centroids[centroid].keys.zip(average_word_counts).flatten]
     end

@@ -2,7 +2,7 @@
 
 module Kmeans
   class Pearson
-    def self.calc(v1,v2)
+    def self.calc(v1, v2)
       v1 = [v1] if v1.class != Array
       v2 = [v2] if v2.class != Array
 

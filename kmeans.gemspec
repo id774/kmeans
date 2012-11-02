@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "kmeans"
-  s.version = "0.0.5"
+  s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["id774"]
-  s.date = "2012-10-30"
+  s.date = "2012-11-02"
   s.description = "K-means clustering"
   s.email = "idnanashi@gmail.com"
   s.extra_rdoc_files = [

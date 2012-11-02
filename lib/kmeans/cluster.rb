@@ -88,7 +88,10 @@ module Kmeans
       average_word_counts = @cluster[centroid].map {|url|
         @centroids[centroid].keys.map {|word| @word_counts[url][word]}
       }.transpose.map {|all_counts|
-        all_counts.inject(0) {|sum, count|sum + count}.quo(all_counts.size)
+        all_counts.inject(0) {|sum, count|
+          count = 0 unless count.class == Fixnum
+          sum + count
+        }.quo(all_counts.size)
       }
       Hash[*@centroids[centroid].keys.zip(average_word_counts).flatten]
     end

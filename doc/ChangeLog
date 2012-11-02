@@ -1,3 +1,8 @@
+=== 0.0.6 / 2012-11-02
+
+* Correspond to unequal hash.
+
+
 === 0.0.5 / 2012-10-30
 
 * Eliminate the dependency for RMagick.

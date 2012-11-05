@@ -76,6 +76,7 @@ module Kmeans
         centroid_counts = []
 
         @word_counts[url].each {|word, count|
+          count = 0 unless count.class == Fixnum
           web_counts << count
           centroid_counts << centroid_word_count[word]
         }

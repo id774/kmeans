@@ -1,3 +1,8 @@
+=== 0.0.7 / 2012-11-05
+
+* Correspond to illegal hash value.
+
+
 === 0.0.6 / 2012-11-02
 
 * Correspond to unequal hash.

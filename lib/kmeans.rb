@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 module Kmeans
-  VERSION = "0.0.6"
+  VERSION = "0.0.7"
   require File.dirname(__FILE__) +  "/kmeans/pair"
   require File.dirname(__FILE__) +  "/kmeans/pearson"
   require File.dirname(__FILE__) +  "/kmeans/cluster"

@@ -12,7 +12,7 @@ task :spec do
   end
 end
 
-if /^1\.9\./ =~ RUBY_VERSION
+unless /^1\.8\./ =~ RUBY_VERSION
   desc "Run RSpec code examples with simplecov"
   task :simplecov do
     ENV['COVERAGE'] = "on"

@@ -5,6 +5,8 @@
 #
 #  Maintainer: id774 <idnanashi@gmail.com>
 #
+#  v1.1 3/14,2013
+#       Show ruby version.
 #  v1.0 3/16,2012
 #       First.
 ########################################################################
@@ -12,6 +14,7 @@
 kickstart() {
     export RACK_ROOT="."
     export RACK_ENV="test"
+    ruby -v
 }
 
 run_tests() {

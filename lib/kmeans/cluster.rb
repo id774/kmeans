@@ -39,7 +39,7 @@ module Kmeans
 
       @word_counts.each {|url, counts|
         counts.each {|word, count|
-          all_counts[word] << count
+          all_counts[word] << count.to_i
         }
       }
 

@@ -47,11 +47,11 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/id774/kmeans"
   s.licenses = ["GPL"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.0"
+  s.rubygems_version = "1.8.24"
   s.summary = "kmeans"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 4
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<cucumber>, [">= 0"])

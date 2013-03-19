@@ -1,3 +1,8 @@
+=== 0.0.8 / 2013-03-19
+
+* Correspond to string or nil included hash.
+
+
 === 0.0.7 / 2012-11-05
 
 * Correspond to illegal hash value.

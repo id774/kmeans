@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "kmeans"
-  s.version = "0.0.7"
+  s.version = "0.0.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["id774"]
-  s.date = "2012-11-05"
+  s.date = "2013-03-19"
   s.description = "K-means clustering"
   s.email = "idnanashi@gmail.com"
   s.extra_rdoc_files = [
@@ -47,11 +47,11 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/id774/kmeans"
   s.licenses = ["GPL"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "2.0.0"
   s.summary = "kmeans"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<cucumber>, [">= 0"])

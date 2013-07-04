@@ -26,7 +26,7 @@ module Kmeans
         @out << "-\n"
       else
         if labels == nil
-          @out << clust.id + "\n"
+          @out << clust.id.to_s + "\n"
         else
           @out << labels[clust.id] + "\n"
         end

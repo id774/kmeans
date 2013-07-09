@@ -1,21 +1,6 @@
-Kmeans Cluster
-==============
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
-**K-means clustering**
-
-
-What is K-means?
-----------------
-
-See also.
-
-+ http://en.wikipedia.org/wiki/K-means_clustering
-
-
-Tutorial
---------
-
-``` html
 require 'kmeans/pair'
 require 'kmeans/pearson'
 require 'kmeans/cluster'
@@ -36,35 +21,3 @@ result.make_cluster
 
 # The results differ for each run
 p result.cluster.values #=> [["test01", "test04"], ["test02"], ["test03", "test05"], ["test06"], []]
-```
-
-For more info, see spec files.
-
-
-ChangeLog
----------
-
-See doc/ChangeLog.
-
-
-Developers
-----------
-
-See doc/AUTHORS.
-
-
-Author
-------
-
-**774**
-
-+ http://id774.net
-+ http://github.com/id774
-
-
-Copyright and license
----------------------
-
-See the file doc/LICENSE.
-
-

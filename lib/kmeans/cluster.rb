@@ -80,7 +80,7 @@ module Kmeans
           web_counts << count
           centroid_counts << centroid_word_count[word]
         }
-        1 - Pearson.calc(web_counts, centroid_counts)
+        centroid_counts.empty? ? 0 : 1 - Pearson.calc(web_counts, centroid_counts)
       }
       correlations.rindex(correlations.min {|x, y| x.abs <=> y.abs })
     end

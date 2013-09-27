@@ -33,6 +33,7 @@ module Kmeans
       end
       printclust(clust.left, labels, n+1) if clust.left != nil
       printclust(clust.right, labels, n+1) if clust.right != nil
+
       return @out
     end
 
@@ -76,6 +77,7 @@ module Kmeans
         clust.delete_at(lowestpair[0])
         clust.push(newcluster)
       end
+
       return clust[0]
     end
   end

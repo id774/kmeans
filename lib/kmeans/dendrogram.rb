@@ -34,6 +34,8 @@ module Kmeans
       img.write(@options[:imagefile])
     end
 
+    private
+
     def drawnode(draw, clust, x, y, scaling, labels)
       if clust.id < 0
         h1 = getheight(clust.left) * 20

@@ -190,6 +190,7 @@ describe Kmeans::Cluster do
         result.make_cluster
         result.cluster.class.should be_equal Hash
         result.cluster.values.class.should be_equal Array
+        result.cluster.values.length.should be_equal 5
       end
     end
 
@@ -210,6 +211,7 @@ describe Kmeans::Cluster do
         result.make_cluster
         result.cluster.class.should be_equal Hash
         result.cluster.values.class.should be_equal Array
+        result.cluster.values.length.should be_equal 5
       end
     end
 
@@ -230,6 +232,7 @@ describe Kmeans::Cluster do
         result.make_cluster
         result.cluster.class.should be_equal Hash
         result.cluster.values.class.should be_equal Array
+        result.cluster.values.length.should be_equal 5
       end
     end
 
@@ -250,6 +253,7 @@ describe Kmeans::Cluster do
         result.make_cluster
         result.cluster.class.should be_equal Hash
         result.cluster.values.class.should be_equal Array
+        result.cluster.values.length.should be_equal 5
       end
     end
 
@@ -270,6 +274,7 @@ describe Kmeans::Cluster do
         result.make_cluster
         result.cluster.class.should be_equal Hash
         result.cluster.values.class.should be_equal Array
+        result.cluster.values.length.should be_equal 5
       end
     end
   end

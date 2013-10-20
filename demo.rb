@@ -1,9 +1,11 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-require 'kmeans/pair'
-require 'kmeans/pearson'
-require 'kmeans/cluster'
+$:.unshift File.join(File.dirname(__FILE__))
+
+require 'lib/kmeans/pair'
+require 'lib/kmeans/pearson'
+require 'lib/kmeans/cluster'
 
 uniform_hash = {
 "test01"=> {"hoge"=>0, "fuga"=>1, "piyo"=>0 },
@@ -14,10 +16,10 @@ uniform_hash = {
 "test06"=> {"hoge"=>3, "fuga"=>1, "piyo"=>1 }}
 
 result = Kmeans::Cluster.new(uniform_hash, {
-  :centroids => 5,
+  :centroids => 3,
   :loop_max => 10
 })
 result.make_cluster
 
 # The results differ for each run
-p result.cluster.values #=> [["test01", "test04"], ["test02"], ["test03", "test05"], ["test06"], []]
+p result.cluster.values #=> [["test01", "test04"], ["test02"], ["test03", "test05", "test06"]]

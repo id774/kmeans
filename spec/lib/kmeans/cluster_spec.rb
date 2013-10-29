@@ -175,106 +175,106 @@ describe Kmeans::Cluster do
   context 'の Cluster クラスにおいて' do
     describe 'キーの均一な二次元ハッシュを渡すと' do
       it "Kmeans::Cluster クラスが返却される" do
-        result = Kmeans::Cluster.new(@uniform_hash, {
+        kmeans = Kmeans::Cluster.new(@uniform_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.class.should be_equal Kmeans::Cluster
+        kmeans.class.should be_equal Kmeans::Cluster
       end
 
       it "ハッシュの配列が返却される (結果は実行ごとに異なる)" do
-        result = Kmeans::Cluster.new(@uniform_hash, {
+        kmeans = Kmeans::Cluster.new(@uniform_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.make_cluster
-        result.cluster.class.should be_equal Hash
-        result.cluster.values.class.should be_equal Array
-        result.cluster.values.length.should be_equal 5
+        kmeans.make_cluster
+        kmeans.cluster.class.should be_equal Hash
+        kmeans.cluster.values.class.should be_equal Array
+        kmeans.cluster.values.length.should be_equal 5
       end
     end
 
     describe 'キーの不均一な二次元ハッシュを渡すと' do
       it "Kmeans::Cluster クラスが返却される" do
-        result = Kmeans::Cluster.new(@unequal_hash, {
+        kmeans = Kmeans::Cluster.new(@unequal_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.class.should be_equal Kmeans::Cluster
+        kmeans.class.should be_equal Kmeans::Cluster
       end
 
       it "ハッシュの配列が返却される (結果は実行ごとに異なる)" do
-        result = Kmeans::Cluster.new(@unequal_hash, {
+        kmeans = Kmeans::Cluster.new(@unequal_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.make_cluster
-        result.cluster.class.should be_equal Hash
-        result.cluster.values.class.should be_equal Array
-        result.cluster.values.length.should be_equal 5
+        kmeans.make_cluster
+        kmeans.cluster.class.should be_equal Hash
+        kmeans.cluster.values.class.should be_equal Array
+        kmeans.cluster.values.length.should be_equal 5
       end
     end
 
     describe 'カウント部分が文字列な二次元ハッシュを渡しても' do
       it "Kmeans::Cluster クラスが返却される" do
-        result = Kmeans::Cluster.new(@string_hash, {
+        kmeans = Kmeans::Cluster.new(@string_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.class.should be_equal Kmeans::Cluster
+        kmeans.class.should be_equal Kmeans::Cluster
       end
 
       it "ハッシュの配列が返却される (結果は実行ごとに異なる)" do
-        result = Kmeans::Cluster.new(@string_hash, {
+        kmeans = Kmeans::Cluster.new(@string_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.make_cluster
-        result.cluster.class.should be_equal Hash
-        result.cluster.values.class.should be_equal Array
-        result.cluster.values.length.should be_equal 5
+        kmeans.make_cluster
+        kmeans.cluster.class.should be_equal Hash
+        kmeans.cluster.values.class.should be_equal Array
+        kmeans.cluster.values.length.should be_equal 5
       end
     end
 
     describe 'nil を含む二次元ハッシュを渡しても' do
       it "Kmeans::Cluster クラスが返却される" do
-        result = Kmeans::Cluster.new(@porous_hash, {
+        kmeans = Kmeans::Cluster.new(@porous_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.class.should be_equal Kmeans::Cluster
+        kmeans.class.should be_equal Kmeans::Cluster
       end
 
       it "ハッシュの配列が返却される (結果は実行ごとに異なる)" do
-        result = Kmeans::Cluster.new(@porous_hash, {
+        kmeans = Kmeans::Cluster.new(@porous_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.make_cluster
-        result.cluster.class.should be_equal Hash
-        result.cluster.values.class.should be_equal Array
-        result.cluster.values.length.should be_equal 5
+        kmeans.make_cluster
+        kmeans.cluster.class.should be_equal Hash
+        kmeans.cluster.values.class.should be_equal Array
+        kmeans.cluster.values.length.should be_equal 5
       end
     end
 
     describe '空のハッシュを含む不均一な二次元ハッシュを渡しても' do
       it "Kmeans::Cluster クラスが返却される" do
-        result = Kmeans::Cluster.new(@empty_hash, {
+        kmeans = Kmeans::Cluster.new(@empty_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.class.should be_equal Kmeans::Cluster
+        kmeans.class.should be_equal Kmeans::Cluster
       end
 
       it "ハッシュの配列が返却される (結果は実行ごとに異なる)" do
-        result = Kmeans::Cluster.new(@empty_hash, {
+        kmeans = Kmeans::Cluster.new(@empty_hash, {
           :centroids => 5,
           :loop_max => 10
           })
-        result.make_cluster
-        result.cluster.class.should be_equal Hash
-        result.cluster.values.class.should be_equal Array
-        result.cluster.values.length.should be_equal 5
+        kmeans.make_cluster
+        kmeans.cluster.class.should be_equal Hash
+        kmeans.cluster.values.class.should be_equal Array
+        kmeans.cluster.values.length.should be_equal 5
       end
     end
   end

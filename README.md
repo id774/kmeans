@@ -43,7 +43,7 @@ kmeans.make_cluster
 p kmeans.cluster.values #=> [["test01", "test04"], ["test02"], ["test03", "test05", "test06"]]
 ```
 
-Hierarchical clustering
+Hierarchical clustering.
 
 ``` html
 require 'kmeans/pair'

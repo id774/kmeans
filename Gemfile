@@ -1,8 +1,8 @@
-# Version:20131209
+# Version:20140610
 
 source :rubygems
 
-# gem 'rmagick'
+gem 'rmagick', '~> 2.13.2'
 
 group :test do
   gem 'rspec', '~> 2.14.0'
